@@ -1,0 +1,34 @@
+{
+  "chains": [
+    {
+      "name": "Kovan",
+      "type": "ethereum",
+      "id": "1",
+      "endpoint": "wss://kovan.infura.io/ws/v3/800075abfbc641a1a59bfb477eed5c01",
+      "from": "0xF0291BE50725Ef8eA95694Ba18BF162026f8fCE9",
+      "opts": {
+        "bridge": "0x1190d302D62C4221B475194AEA46d959e5749EeF",
+        "erc721Handler": "0xF3D181a2123c7c32c8396601A678682088155812",
+        "gasLimit": "1000000",
+        "maxGasPrice": "20000000",
+        "startBlock": "32251495"
+      }
+    },
+    {
+      "name": "Rinkeby",
+      "type": "ethereum",
+      "id": "2",
+      "endpoint": "wss://rinkeby.infura.io/ws/v3/800075abfbc641a1a59bfb477eed5c01",
+      "from": "0xF0291BE50725Ef8eA95694Ba18BF162026f8fCE9",
+      "opts": {
+        "bridge": "0xe3b5246d84c7a738d75a0a72fe2c36192680d2bc",
+        "erc721Handler": "0xa8f1f4c1004123af03054b5d0b2b18413166b0cc",
+        "gasLimit": "3000000",
+        "maxGasPrice": "10000000000",
+        "startBlock": "10869007"
+      }
+    }
+
+  ]
+}
+
