@@ -274,7 +274,7 @@ func (w *writer) voteProposal(m msg.Message, dataHash [32]byte) {
 
 			if err == nil {
 				w.log.Info("Submitted proposal vote", "tx", tx.Hash(), "src", m.Source, "depositNonce", m.DepositNonce, "gasPrice", tx.GasPrice().String())
-				reqURL := fmt.Sprintf("http://localhost:3000/transactions/vote-proposal/%s/%s", tx.Hash().String(), strconv.FormatUint(uint64(m.Destination), 10))
+				reqURL := fmt.Sprintf("http://localhost:3000/transactions/vote-proposal/%s", strconv.FormatUint(uint64(m.DepositNonce), 10))
 				w.log.Info("VOTE_PROPOSAL")
 				w.log.Info(reqURL)
 				_, err := http.Get(reqURL)
